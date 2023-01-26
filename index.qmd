@@ -1,6 +1,6 @@
 ---
-title: "Weekly Summary Template"
-author: "Author Name"
+title: "Week-3 Sum"
+author: "Conner Langnas"
 title-block-banner: true
 title-block-style: default
 toc: true
@@ -10,7 +10,7 @@ format: html
 
 ---
 
-## Tuesday, Jan 17
+## Tuesday, Jan 24
 
 ::: {.callout-important}
 ## TIL
