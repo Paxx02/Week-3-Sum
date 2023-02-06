@@ -15,36 +15,29 @@ format: html
 ::: {.callout-important}
 ## TIL
 
-Include a _very brief_ summary of what you learnt in this class here. 
+Today we went over some useful packages to have installed and that we will work with. 
 
-Today, I learnt the following concepts in class:
-
-1. Item 1
-1. Item 2
-1. Item 3
+1. read.csv
+1. dplyr
+1. ggplot2
+1. ggplotthemes
 :::
 
-Provide more concrete details here. You can also use footenotes[^footnote] if you like
+the csv files are the data sets. 
+a sample csv file might look like this
 
-```{R results='hide'}
-#| output: false
-library(dplyr)
-library(purrr)
-```
+Consider this csv file:
 
-
-For example: 
-in class we learnt we learnt about the `map` function from the `purrr` package. 
-
-
-```{R results='hide', fig.width=7, fig.height=7}
-par(mfrow=c(3, 3), mar=c(3.5, 3.5, 2, 1), mgp=c(2.4, 0.8, 0))
-map(1:9, function(i)rnorm(1000) %>% hist(., main=i, col=i))
-```
+Name, Age, Height
+Alice, 21, 5.5
+Bob, 25, 6.2
+Charlie, 35, 5.9
 
 
 
-## Thursday, Jan 19
+
+
+## Thursday, Jan 26
 
 
 
@@ -64,13 +57,8 @@ Provide more concrete details here, e.g.,
 
 In class we learnt how to use the `map` function to create multiple regression diagnostic plots
 
-```{R results='hide', fig.height=4}
-par(mfcol=c(2, 3), mar=c(3.5, 3.5, 2, 1), mgp=c(2.4, 0.8, 0))
-mtcars %>%
-  split(.$cyl) %>%
-  map(~ lm(mpg ~ wt, data = .x)) %>%
-  map(function(x)plot(x, which=c(1, 2)))
-```
+
+
 
 
 [^footnote]: You can include some footnotes here
